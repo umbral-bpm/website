@@ -15,16 +15,9 @@ body {
 }
 
 .triangle-left {
-    /*
-    width: 48%;
-    aspect-ratio: 1/1;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-    overflow: hidden;
-    */
     position: relative;
     width: 45vw;
     height: 100vh;
-    /*clip-path: polygon(0 0, 100% 0, 0 100%);*/
     clip-path: polygon(0 0, 100% 0, 25% 100%, 0 100%);
     overflow: hidden;
 }
@@ -42,7 +35,6 @@ body {
     right: 0;
     width: 45vw;
     height: 100vh;
-    /* clip-path: polygon(75% 0, 100% 100%, 0 100%); */
     clip-path: polygon(65% 0, 100% 0, 100% 100%, 0 100%);
     overflow: hidden;
 }
@@ -98,4 +90,34 @@ body {
     margin: 0;
     white-space: nowrap;
     font-size: clamp(0.6rem, 1.1vw, 0.85rem);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .triangle-left {
+        width: 100vw;
+        height: 45vh;
+        clip-path: polygon(0 0, 100% 0, 100% 25%, 0 100%);
+    }
+
+    .triangle-right {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        width: 100vw;
+        height: 50vh;
+        clip-path: polygon(0 75%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .center-box img {
+        width: 100vw;
+        top: 40vw;
+        object-position: 50% 0%;
+    }
+}
+
+@media (max-height: 730px) {
+    .center-box img {
+        top: 10vw;
+    }
 }
