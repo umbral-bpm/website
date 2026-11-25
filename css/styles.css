@@ -19,6 +19,10 @@ body {
     background-color: red;
 }
 
+#landing {
+    background-color: black;
+}
+
 .triangle-left {
     position: relative;
     width: 45vw;
