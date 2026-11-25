@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
+html,
+body {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -95,6 +100,7 @@ body {
 
 @media (max-width: 768px) {
     .triangle-left {
+        position: fixed;
         width: 100vw;
         height: 45vh;
         clip-path: polygon(0 0, 100% 0, 100% 25%, 0 100%);
@@ -107,6 +113,10 @@ body {
         width: 100vw;
         height: 50vh;
         clip-path: polygon(0 75%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .center-box {
+        position: fixed;
     }
 
     .center-box img {
